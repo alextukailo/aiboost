@@ -26,8 +26,9 @@ validate()
     const setCanonicalHref = () => {
         let target = document.querySelectorAll("link[rel='canonical']"),
             protocol = window.location.protocol,
-            hostname = window.location.hostname
-            target[0].href = protocol + '//' + hostname + '/'
+            hostname = window.location.hostname,
+            pathname = window.location.pathname
+            target[0].href = protocol + '//' + hostname + pathname
     }
     setCanonicalHref()
 
