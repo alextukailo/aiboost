@@ -39,6 +39,9 @@
 
         &_right {
             position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-15rem,3rem);
             @media(--lg-screen) {
                 top: 14rem;
                 left: 50%;
@@ -48,6 +51,9 @@
 
         &_lg-left {
             position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(15rem,4rem);
             @media(--lg-screen) {
                 top: 14rem;
                 left: 50%;
@@ -57,7 +63,9 @@
 
         &_md-bottom {
             position: absolute;
+            display: none;
             @media(--lg-screen) {
+                display: block;
                 top: 14rem;
                 left: 50%;
                 transform: translate(60rem, 85rem);
@@ -187,7 +195,9 @@
         }
         &_top-right {
             position: absolute;
+            display: none;
             @media(--md-screen) {
+                display: block;
                 top: 0rem;
                 left: 50%;
                 transform: translate(68rem, 22rem);
@@ -197,7 +207,9 @@
 
         &_bottom-right {
             position: absolute;
+            display: none;
             @media(--md-screen) {
+                display: block;
                 top: 0rem;
                 left: 50%;
                 transform: translate(68rem, 92rem);
@@ -206,6 +218,9 @@
 
         &_bottom-left {
             position: absolute;
+            top: 84%;
+            left: 50%;
+            transform: translate(-2rem,0rem) scale(.5);
             @media(--md-screen) {
                 top: 0rem;
                 left: 50%;

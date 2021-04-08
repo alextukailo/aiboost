@@ -2,8 +2,8 @@
 
     &__inner {
         position: relative;
-        background: var(--shadowDark);
         padding: 13.5rem 0 5rem 0;
+        background: var(--shadowDark);
         @media(--md-screen) {
             padding: 60rem 0 16rem 0;
         }
