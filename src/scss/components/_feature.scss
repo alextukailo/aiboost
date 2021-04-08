@@ -239,11 +239,11 @@
                 display: block;
                 top: 0;
                 left: 50%;
-                transform: translate(-80%, 518%) scale(0.7);
+                transform: translate(-80%, 555%) scale(0.7);
             }
 
             @media(--xlg-screen) {
-                transform: translate(-74%, 518%);
+                transform: translate(-74%, 555%);
             }
         }
 
@@ -266,7 +266,7 @@
                 display: block;
                 bottom: 0;
                 left: 50%;
-                transform: translate(-145%, -37rem);
+                transform: translate(-145%, -20rem);
                 z-index: 1;
             }
         }
@@ -370,7 +370,7 @@
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
-                transform: translate(-90rem, 290rem);
+                transform: translate(-90rem, 318rem);
                 z-index: 3;
             }
         }
@@ -384,7 +384,7 @@
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
-                transform: translate(-50rem, 300rem);
+                transform: translate(-50rem, 327rem);
                 z-index: 3;
             }
         }
@@ -398,7 +398,7 @@
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
-                transform: translate(-85rem, 285rem);
+                transform: translate(-85rem, 315rem);
                 z-index: 3;
             }
         }
