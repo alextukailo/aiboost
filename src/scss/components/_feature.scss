@@ -341,7 +341,9 @@
 
         &_md-top {
             position: absolute;
+            display: none;
             @media(--md-screen) {
+                display: block;
                 top: 14rem;
                 left: 50%;
                 transform: translate(35rem, 80rem);
@@ -350,7 +352,9 @@
 
         &_lg-bottom {
             position: absolute;
+            display: none;
             @media(--md-screen) {
+                display: block;
                 top: 14rem;
                 left: 50%;
                 transform: translate(60rem, 190rem);
