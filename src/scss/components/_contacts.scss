@@ -1,0 +1,216 @@
+.contacts {
+    margin-top: -.1rem;
+    &__inner {
+        position: relative;
+        background: linear-gradient(180deg, #0E2643 23.33%, #1B3D64 100%);
+        padding: 6rem 0;
+        overflow: hidden;
+        @media(--md-screen) {
+            padding: 34rem 0 16rem 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 2;
+        @media(--md-screen) {
+            max-width: 96rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__background {
+
+        &_bottom {
+            position: absolute;
+            @media(--lg-screen) {
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                z-index: 0;
+            }
+        }
+    }
+
+    &__star {
+
+        &_right {
+            position: absolute;
+            @media(--lg-screen) {
+                top: 14rem;
+                left: 50%;
+                transform: translate(80rem, 20rem);
+            }
+        }
+
+        &_lg-left {
+            position: absolute;
+            @media(--lg-screen) {
+                top: 14rem;
+                left: 50%;
+                transform: translate(-80rem, 15rem);
+            }
+        }
+
+        &_md-bottom {
+            position: absolute;
+            @media(--lg-screen) {
+                top: 14rem;
+                left: 50%;
+                transform: translate(60rem, 85rem);
+            }
+        }
+    }
+
+    &__side {
+
+        &_left {
+            max-width: 46.7rem;
+            @media(--md-screen) {
+               margin: 0 4rem 0 0;
+            }
+        }
+
+        &_right {
+            display: block;
+            max-width: 41.2rem;
+            width: 100%;
+            @media(--md-screen) {
+                margin: 0 0 0 4rem;
+            }
+        }
+
+        &_mobile {
+            display: block;
+            margin-bottom: 2.4rem;
+            @media(--md-screen) {
+                display: none;
+            }
+        }
+
+        &_desc {
+            display: none;
+            @media(--md-screen) {
+                display: block;
+            }
+        }
+    }
+
+    &__heading {
+        font-weight: 900;
+        font-size: 4.2rem;
+        line-height: 5rem;
+        color: var(--colorWhite);
+        margin-bottom: 3.2rem;
+        text-align: center;
+
+        @media(--md-screen) {
+            font-size: 3.6rem;
+            line-height: 4.3rem;
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        span {
+            color: var(--colorBlue);
+
+            @media(--md-screen) {
+                color: var(--colorWhite);
+            }
+        }
+    }
+
+    &__text {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        @media(--md-screen) {
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 1.6rem 2.6rem;
+        border-radius: 8px;
+        @media(--md-screen) {
+            padding: 2.4rem;
+        }
+
+        &.active {
+            background: var(--colorButtonBlue);
+        }
+    }
+    
+    &__img {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-right: 2.4rem;
+        @media(--md-screen) {
+            width: 4.8rem;
+            height: 4.8rem;
+            margin-right: 4rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--colorWhite);
+        @media(--md-screen) {
+            font-weight: 300;
+            font-size: 2rem;
+        }
+    }
+
+    &__form {
+        padding: 5rem 2.4rem;
+        @media(--md-screen) {
+            padding: 5rem 4rem;
+        }
+    }
+
+    &__input {
+        margin-bottom: 5rem;
+        @media(--md-screen) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__ellipse {
+
+        @media(--md-screen) {
+                
+        }
+        &_top-right {
+            position: absolute;
+            @media(--md-screen) {
+                top: 0rem;
+                left: 50%;
+                transform: translate(68rem, 22rem);
+                opacity: .4;
+            }
+        }
+
+        &_bottom-right {
+            position: absolute;
+            @media(--md-screen) {
+                top: 0rem;
+                left: 50%;
+                transform: translate(68rem, 92rem);
+            }
+        }
+
+        &_bottom-left {
+            position: absolute;
+            @media(--md-screen) {
+                top: 0rem;
+                left: 50%;
+                transform: translate(-110rem, 65rem);
+            }
+        }
+    }
+}

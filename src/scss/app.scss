@@ -1,0 +1,20 @@
+//base
+@import "./base/general";
+@import "./base/typography";
+@import "./base/variables";
+
+//modules
+@import "./modules/buttons";
+@import "./mixins/mixins";
+@import "./modules/modifiers";
+// @import "./modules/owl";
+
+//components
+@import "./components/header";
+@import "./components/hero"; 
+@import "./components/work"; 
+@import "./components/feature"; 
+@import "./components/try"; 
+@import "./components/contacts"; 
+
+// @import "./components/footer";

@@ -1,0 +1,219 @@
+.work {
+
+    &__block {
+        margin-bottom: 3.2rem;
+        @media(--md-screen) {
+            margin-bottom: 27.5rem;
+        }
+    }
+
+    .work-stages {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media(--md-screen) {
+            
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 4.5%;
+            background: url('../img/backgrounds/mobile/arrow-top.svg');
+            width: 21.7rem;
+            height: 24rem;
+            background-size: cover;
+            transform: translate(7rem, 12.5rem);
+
+            @media(--md-screen) {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -260%;
+                left: 7.5%;
+                background: url('../img/icons/arrow-top.svg');
+                width: 67rem;
+                height: 14rem;
+                background-size: cover;
+                transform: none;
+            }
+
+            @media(--lg-screen) {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -260%;
+                left: 7.5%;
+                background: url('../img/icons/arrow-top.svg');
+                width: 67rem;
+                height: 14rem;
+                background-size: cover;
+            }
+
+            @media(--xlg-screen) {
+                top: -13rem;
+                left: 4.5%;
+                width: 100rem;
+                height: 21rem;
+                background-size: cover;
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 4.5%;
+            background: url('../img/backgrounds/mobile/arrow-down.svg');
+            width: 27.7rem;
+            height: 45.3rem;
+            background-size: cover;
+            transform: translate(-3rem, 12.5rem);
+
+            @media(--md-screen) {
+                content: '';
+                display: block;
+                position: absolute;
+                top: auto;
+                bottom: -230%;
+                left: 8%;
+                background: url(../img/icons/arrow-down.svg);
+                width: 98rem;
+                height: 12.5rem;
+                background-size: cover;
+                transform: none;
+            }
+
+            @media(--lg-screen) {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -230%;
+                left: 8%;
+                background: url(../img/icons/arrow-down.svg);
+                width: 98rem;
+                height: 12.5rem;
+                background-size: cover;
+            }
+
+            @media(--xlg-screen) {
+                bottom: -12rem;
+                left: 5.2%;
+                width: 153rem;
+                height: 19.5rem;
+                background-size: cover;
+            }
+        }
+
+        &__item {
+            position: relative;
+            width: 50%;
+            font-weight: 900;
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            color: var(--colorWhite);
+            text-align: center;
+            padding: 7rem 0;
+            margin-bottom: 2rem;
+
+            @media(--md-screen) {
+                width: inherit;
+                font-size: 3.8rem;
+                line-height: 5.8rem;
+                text-align: center;
+            }
+
+            @media(--xlg-screen) {
+                font-size: 4.8rem;
+            }
+          
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 900;
+                font-size: 14.4rem;
+                line-height: 34.6rem;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: .2rem;
+                -webkit-text-stroke-color: rgba(241, 241, 241, 0.2);
+                @media(--md-screen) {
+                    font-size: 20.8rem;
+                }
+                @media(--xlg-screen) {
+                    font-size: 28.8rem;
+                }
+            }
+
+            &:after {
+                display: none;
+
+                @media(--md-screen) {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(135%, -30%);
+                    display: block;
+                    width: 7rem;
+                    height: .5rem;
+                }
+            }
+
+            &:nth-child(1):before {
+                content: '1';
+            }
+
+            &:nth-child(1):after {
+                background: url(../img/icons/arrow-partright.svg);
+            }
+
+            &:nth-child(2):before {
+                content: '2';
+            }
+
+            &:nth-child(2):after {
+                background: url(../img/icons/arrow-partleft.svg);
+            }
+
+            &:nth-child(3):before {
+                content: '3';
+            }
+
+            &:nth-child(3):after {
+                background: url(../img/icons/arrow-partright.svg);
+            }
+
+            &:nth-child(4):before {
+                content: '4';
+            }
+
+            &:nth-child(4):after {
+                background: url(../img/icons/arrow-partleft.svg);
+            }
+
+            &:nth-child(5):before {
+                content: '5';
+            }
+
+            &:nth-child(5):after {
+                background: url(../img/icons/arrow-parthead.svg);
+                width: 8rem;
+                height: 2.4rem;
+            }
+
+            &:nth-child(6):before {
+                content: '6';
+            }
+        }
+    }
+}

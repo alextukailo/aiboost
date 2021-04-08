@@ -1,0 +1,30 @@
+:root {
+    --colorMain: #f8f8f8;
+    --colorBlue: #6EAFFB;
+    --colorButtonBlue: #087AFF;
+    --colorDarkBlue: #113053;
+    --colorBlack: #273853;
+    --colorGrey: #EFF6FF;
+    --colorWhite: #f1f1f1;
+    --colorGreen: #0AE4B0;
+    --fontColor: #1D1D1D;
+    --secondaryFontColor: #3F3F3F;
+    --shadowDark: linear-gradient(180deg, #1B3D64 0%, #0E2643 8.79%);
+    --shadowDarkMenu: linear-gradient(180deg, #0e3e75 0%, #0E2643 52.79%);
+}
+
+@custom-media --md-screen (width >= 1023px);
+@custom-media --lg-screen (width >= 1200px);
+@custom-media --xlg-screen (width >= 1500px);
+
+@custom-media --mobile-screen (width <= 537px);
+@custom-media --laptop-screen (width <= 768px);
+@custom-media --desctop-screen (width <= 1200px);
+
+@custom-selector :--heading h1, h2, h3, h4;
+
+:--heading {
+  margin: 0;
+  padding: 0;
+}
+

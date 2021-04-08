@@ -1,0 +1,172 @@
+.try {
+
+    &__inner {
+        position: relative;
+        background: var(--shadowDark);
+        padding: 13.5rem 0 5rem 0;
+        @media(--md-screen) {
+            padding: 60rem 0 16rem 0;
+        }
+    }
+
+    &__star {
+
+        &_top {
+            position: absolute;
+            @media(--lg-screen) {
+                top: 14rem;
+                left: 50%;
+                transform: translate(65rem, 25rem);
+            }
+        }
+
+        &_md-bottom {
+            position: absolute;
+            @media(--lg-screen) {
+                top: 14rem;
+                left: 50%;
+                transform: translate(55rem, 113rem);
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media(--lg-screen) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__form {
+        max-width: 52.3rem;
+        width: 100%;
+        padding: 4rem 2.4rem;
+        margin-bottom: 4rem;
+
+        @media(--md-screen) {
+            padding: 8rem 6rem;
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &__input {
+        max-width: 33.2rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+
+    .video {
+        position: relative;
+        max-width: 100rem;
+        width: 100%;
+
+        &__source {
+            border-radius: 1.6rem;
+        }
+
+        &__close {
+            cursor: pointer;
+            @media(--md-screen) {
+
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -3.5rem;
+                right: 0;
+                background: url('../img/icons/close.svg') no-repeat;
+                background-size: contain;
+                width: 2rem;
+                height: 2rem;
+                @media(--md-screen) {
+                    top: -2.5rem;
+                    right: -2.5rem;
+                }
+            }
+        }
+
+        &__thumb {
+            position: relative;
+            @media(--md-screen) {
+                margin-left: 3rem;
+            }
+
+            &_source {
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                transform: scale(1.1);
+                @media(--md-screen) {
+                    transform: none;
+                }
+            }
+        }
+
+        &__play {
+            max-width: 3.3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+            z-index: 2;
+
+            @media(--md-screen) {
+                max-width: none;
+            }
+
+            &:hover {
+                @media(--md-screen) {
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__mobile_watch {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: #4997F2;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+
+        @media(--md-screen) {
+           display: none;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 1.2rem;
+            height: 1.2rem;
+            background: url('../img/icons/watch_arrow.svg') no-repeat;
+            background-size: contain;
+            margin-left: 1rem;
+        }
+    }
+}
