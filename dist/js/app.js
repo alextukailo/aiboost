@@ -226,13 +226,11 @@ var ajaxSendData = function ajaxSendData() {
             formph.reset();
           } else {
             // console.log(data);
-            formph.reset(); // $('#thankyou').addClass('done')
-            // $('.modal__label').removeClass('active')
-            // document.getElementById('modal').hidden = true
-            // document.body.style.overflow = "inherit"
-            // setTimeout(()=>{
-            //     $('#thankyou').removeClass('done')
-            // }, 5500);
+            formph.reset();
+            $('#try_response').text('Sent successfully');
+            setTimeout(function () {
+              $('#try_response').text('Try now');
+            }, 5500);
           }
         },
         error: function error(data) {
@@ -258,7 +256,7 @@ var ajaxSendData = function ajaxSendData() {
     focusInvalid: true,
     errorClass: "input_error"
   });
-  var formph = $('#contacts_form');
+  var formph = $('.contacts__form');
   formph.validate({
     submitHandler: function submitHandler(formph) {
       var fd = new FormData(formph);
@@ -276,13 +274,11 @@ var ajaxSendData = function ajaxSendData() {
             formph.reset();
           } else {
             // console.log(data);
-            formph.reset(); // $('#thankyou').addClass('done')
-            // $('.modal__label').removeClass('active')
-            // document.getElementById('modal').hidden = true
-            // document.body.style.overflow = "inherit"
-            // setTimeout(()=>{
-            //     $('#thankyou').removeClass('done')
-            // }, 5500);
+            formph.reset();
+            $('#try_response').text('Sent successfully');
+            setTimeout(function () {
+              $('#try_response').text('Send Message');
+            }, 5500);
           }
         },
         error: function error(data) {

@@ -87,13 +87,10 @@ validate()
                     } else {
                         // console.log(data);
                         formph.reset();
-                        // $('#thankyou').addClass('done')
-                        // $('.modal__label').removeClass('active')
-                        // document.getElementById('modal').hidden = true
-                        // document.body.style.overflow = "inherit"
-                        // setTimeout(()=>{
-                        //     $('#thankyou').removeClass('done')
-                        // }, 5500);
+                        $('#try_response').text('Sent successfully')
+                        setTimeout(()=>{
+                            $('#try_response').text('Try now')
+                        }, 5500);
                     }
                 },
                 error: function(data){
@@ -122,7 +119,7 @@ validate()
         });
 
 
-		var formph = $('#contacts_form');	
+		var formph = $('.contacts__form');	
         formph.validate({
         submitHandler: function(formph) {
             var fd = new FormData( formph );
@@ -141,13 +138,10 @@ validate()
                     } else {
                         // console.log(data);
                         formph.reset();
-                        // $('#thankyou').addClass('done')
-                        // $('.modal__label').removeClass('active')
-                        // document.getElementById('modal').hidden = true
-                        // document.body.style.overflow = "inherit"
-                        // setTimeout(()=>{
-                        //     $('#thankyou').removeClass('done')
-                        // }, 5500);
+                        $('#try_response').text('Sent successfully')
+                        setTimeout(()=>{
+                            $('#try_response').text('Send Message')
+                        }, 5500);
                     }
                 },
                 error: function(data){
