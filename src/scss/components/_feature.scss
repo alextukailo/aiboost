@@ -110,7 +110,7 @@
 
         &_laptop-right {
             position: absolute;
-            top: 7%;
+            top: 6.5%;
             left: 50%;
             transform: translate(-50%, 0) scale(0.3);
             z-index: 1;
@@ -131,7 +131,7 @@
 
         &_flower-right {
             position: absolute;
-            top: 3.5rem;
+            top: 5.2rem;
             left: 50%;
             transform: translate(-85%, 158%) scale(0.4);
             z-index: 0;
@@ -150,7 +150,7 @@
 
         &_laptop-left {
             position: absolute;
-            top: 34.5%;
+            top: 34%;
             left: 50%;
             transform: translate(-58%, 0) scale(0.35);
             z-index: 10;
@@ -199,7 +199,7 @@
 
         &_scheme {
             position: absolute;
-            top: 57%;
+            top: 56.5%;
             left: 50%;
             transform: translate(-52%, 0) scale(.3);
             z-index: 0;
@@ -302,6 +302,10 @@
 
         &_top {
             position: absolute;
+            top: 28%;
+            left: 50%;
+            transform: translate(-7rem, 0);
+            z-index: 3;
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
@@ -311,6 +315,10 @@
 
         &_left {
             position: absolute;
+            top: 29%;
+            left: 50%;
+            transform: translate(12rem, 0);
+            z-index: 3;
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
@@ -320,6 +328,10 @@
 
         &_right {
             position: absolute;
+            top: 31%;
+            left: 50%;
+            transform: translate(-15rem, 0);
+            z-index: 3;
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
@@ -347,6 +359,10 @@
 
         &_bottom-left {
             position: absolute;
+            top: 45.5%;
+            left: 50%;
+            transform: translate(15rem);
+            z-index: 3;
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
@@ -357,6 +373,10 @@
 
         &_bottom-right {
             position: absolute;
+            top: 45.5%;
+            left: 50%;
+            transform: translate(15rem);
+            z-index: 3;
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
@@ -367,6 +387,10 @@
 
         &_md-bottom-right {
             position: absolute;
+            top: 51.7%;
+            left: 50%;
+            transform: translate(-13rem);
+            z-index: 3;
             @media(--md-screen) {
                 top: 14rem;
                 left: 50%;
@@ -380,23 +404,34 @@
 
         &_top-right {
             position: absolute;
-            display: none;
+            top: 25%;
+            left: 50%;
+            transform: translate(-20rem) scale(.5);
+            opacity: .7;
+            z-index: 3;
+
             @media(--md-screen) {
                 display: block;
                 top: 14rem;
                 left: 50%;
                 transform: translate(39rem, 51rem);
+                opacity: 1;
             }
         }
 
         &_bottom-right {
             position: absolute;
-            display: none;
+            top: 47%;
+            left: 50%;
+            transform: translate(2rem) scale(.5);
+            opacity: .7;
+            z-index: 3;
             @media(--md-screen) {
                 display: block;
                 top: 14rem;
                 left: 50%;
                 transform: translate(50rem, 178rem);
+                opacity: 1;
             }
         }
 
