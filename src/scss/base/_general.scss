@@ -463,7 +463,9 @@
       line-height: 2.1rem;
       color: var(--colorWhite);
       margin-bottom: 2rem;
-
+      @media(min-width: 537px) and (max-width:1025px) {
+        margin: 0 auto;
+      }
       @media(--md-screen) {
         font-size: 2rem;
         line-height: 2.4rem;  
@@ -484,6 +486,10 @@
       &:nth-child(2) {
         background: var(--shadowDark);
         padding-bottom: 15rem;
+        
+        @media(min-width: 537px) and (max-width:1025px) {
+          padding-bottom: 25rem;
+        }
 
         @media(--md-screen) {
           background: none;

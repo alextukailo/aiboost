@@ -15,6 +15,9 @@
     &__block {
         position: relative;
         padding: 9rem 0 5rem 0;
+        @media(min-width: 537px) and (max-width:1025px) {
+            padding: 9rem 0 10rem;
+        }
         @media(--md-screen) {
             margin-bottom: 19rem;
             padding: 0;
@@ -45,6 +48,9 @@
             bottom: -4.5rem;
             width: 100%;
             z-index: 20;
+            @media(min-width: 537px) and (max-width:1025px) {
+                bottom: -9.5rem;
+            }
             @media(--md-screen) {
                 display: none;    
             }
@@ -69,6 +75,9 @@
             bottom: -8.5rem;
             width: 100%;
             z-index: 20;
+            @media(min-width: 537px) and (max-width:1025px) {
+                bottom: -16.5rem;
+            }
             @media(--md-screen) {
                 display: none;    
             }
@@ -100,6 +109,9 @@
             display: block;
             top: -6.5rem;
             left: 0;
+            @media(min-width: 537px) and (max-width:1025px) {
+                top: -13.5rem;
+            }
             @media(--md-screen) {
                 top: 0;
                 left: 50%;
@@ -114,6 +126,9 @@
             left: 50%;
             transform: translate(-50%, 0) scale(0.3);
             z-index: 1;
+            @media(min-width: 537px) and (max-width:1025px) {
+                transform: translate(-50%, -6rem) scale(.35);
+            }
 
             @media(--md-screen) {
                 display: block;
@@ -135,7 +150,10 @@
             left: 50%;
             transform: translate(-85%, 158%) scale(0.4);
             z-index: 0;
-            
+            @media(min-width: 537px) and (max-width:1025px) {
+                transform: translate(-92%,120%) scale(.4);
+            }
+
             @media(--md-screen) {
                 display: block;
                 top: 0;
@@ -154,6 +172,9 @@
             left: 50%;
             transform: translate(-58%, 0) scale(0.35);
             z-index: 10;
+            @media(min-width: 537px) and (max-width:1025px) {
+                transform: translate(-50%, -14rem) scale(.35);
+            }
 
             @media(--md-screen) {
                 display: block;
@@ -203,6 +224,9 @@
             left: 50%;
             transform: translate(-52%, 0) scale(.3);
             z-index: 0;
+            @media(min-width: 537px) and (max-width:1025px) {
+                transform: translate(-50%, -7rem) scale(.35);
+            }
 
             @media(--md-screen) {
                 display: block;
@@ -234,6 +258,11 @@
             left: 0;
             transform: translate(-35%, 0%) scale(.3);
             z-index: 4;
+            @media(min-width: 537px) and (max-width:1025px) {
+                top: 81%;
+                left: 0;
+                transform: translate(-33%) scale(.35);
+            }
 
             @media(--md-screen) {
                 display: block;

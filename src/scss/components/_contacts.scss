@@ -77,6 +77,9 @@
 
         &_left {
             max-width: 46.7rem;
+            @media(min-width: 537px) and (max-width:1025px) {
+                max-width: 100%;
+            }
             @media(--md-screen) {
                margin: 0 4rem 0 0;
             }
@@ -86,6 +89,9 @@
             display: block;
             max-width: 41.2rem;
             width: 100%;
+            @media(min-width: 537px) and (max-width:1025px) {
+                max-width: 100%;
+            }
             @media(--md-screen) {
                 margin: 0 0 0 4rem;
             }

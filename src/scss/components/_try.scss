@@ -46,7 +46,10 @@
         width: 100%;
         padding: 4rem 2.4rem;
         margin-bottom: 4rem;
-
+        @media(min-width: 537px) and (max-width:1025px) {
+            max-width: 100%;
+            margin-top: 12rem;
+        }
         @media(--md-screen) {
             padding: 8rem 6rem;
             margin-bottom: 0;
@@ -154,7 +157,9 @@
         color: #4997F2;
         margin: 0 auto;
         margin-bottom: 4rem;
-
+        @media(min-width: 537px) and (max-width:1025px) {
+            margin: 0 auto 7rem;
+        }
         @media(--md-screen) {
            display: none;
         }
