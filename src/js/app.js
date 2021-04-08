@@ -74,7 +74,7 @@ validate()
             var fd = new FormData( formph );
             $.ajax({
                 async: true,
-                url: "", 
+                url: "./src/mail/send_try.php", 
                 type: "POST",             
                 data: fd,
                 cache: false,  
@@ -125,7 +125,7 @@ validate()
             var fd = new FormData( formph );
             $.ajax({
                 async: true,
-                url: "", 
+                url: "./src/mail/send_contacts.php", 
                 type: "POST",             
                 data: fd,
                 cache: false,  
