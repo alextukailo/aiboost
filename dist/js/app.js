@@ -498,7 +498,7 @@ var onHandleClickOpenMenu = function onHandleClickOpenMenu() {
   });
 };
 
-onHandleClickOpenMenu(); // screen.orientation.lock()
+onHandleClickOpenMenu();
 
 /***/ }),
 

@@ -369,4 +369,3 @@ validate()
     }
     onHandleClickOpenMenu()
 	
-	// screen.orientation.lock()
