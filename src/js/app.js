@@ -15,7 +15,6 @@ validate()
 	    let navArr = [].slice.call(navItem)
 	    let mobileNav = navArr.map((nav) => {
 	        let id = nav.hash
-            console.log(id)
 	        return '<a class="nav-mobile__menu_item" href="' + id + '">' + nav.innerText + '</a>'
 	    })
 	    
@@ -301,7 +300,6 @@ validate()
             	let coord = {
             	    scrollTop: position
             	}
-            	console.log(coord.scrollTop)
             	$("body, html").animate(coord);
             
             })

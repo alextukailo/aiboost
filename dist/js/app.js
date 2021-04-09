@@ -160,7 +160,6 @@ var nav = function nav() {
   var navArr = [].slice.call(navItem);
   var mobileNav = navArr.map(function (nav) {
     var id = nav.hash;
-    console.log(id);
     return '<a class="nav-mobile__menu_item" href="' + id + '">' + nav.innerText + '</a>';
   });
   mobileWrap.innerHTML = mobileNav.join(' ');
@@ -433,7 +432,6 @@ var scrollToAnchor = function scrollToAnchor() {
       var coord = {
         scrollTop: position
       };
-      console.log(coord.scrollTop);
       $("body, html").animate(coord);
     });
   });
