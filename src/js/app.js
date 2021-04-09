@@ -14,7 +14,8 @@ validate()
 	    let mobileWrap = document.getElementById('mobile_menu')
 	    let navArr = [].slice.call(navItem)
 	    let mobileNav = navArr.map((nav) => {
-	        let id = nav.href
+	        let id = nav.hash
+            console.log(id)
 	        return '<a class="nav-mobile__menu_item" href="' + id + '">' + nav.innerText + '</a>'
 	    })
 	    
@@ -283,11 +284,19 @@ validate()
             	e.preventDefault();
             	var position = $($(this).attr("href")).offset().top
             	let header = $('.header__inner')
-            	if(header.hasClass('colored')) {
-            	   position -= 150
-            	} else {
-            	   position -= 195
-            	}
+                if(window.innerWidth >= 537) {
+                    if(header.hasClass('colored')) {
+                       position -= 150
+                    } else {
+                       position -= 195
+                    }
+                } else if(window.innerWidth <= 537) {
+                    if(header.hasClass('colored')) {
+                        position -= 45
+                     } else {
+                        position -= 45
+                     }
+                }
             	
             	let coord = {
             	    scrollTop: position

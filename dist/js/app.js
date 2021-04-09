@@ -159,7 +159,8 @@ var nav = function nav() {
   var mobileWrap = document.getElementById('mobile_menu');
   var navArr = [].slice.call(navItem);
   var mobileNav = navArr.map(function (nav) {
-    var id = nav.href;
+    var id = nav.hash;
+    console.log(id);
     return '<a class="nav-mobile__menu_item" href="' + id + '">' + nav.innerText + '</a>';
   });
   mobileWrap.innerHTML = mobileNav.join(' ');
@@ -415,10 +416,18 @@ var scrollToAnchor = function scrollToAnchor() {
       var position = $($(this).attr("href")).offset().top;
       var header = $('.header__inner');
 
-      if (header.hasClass('colored')) {
-        position -= 150;
-      } else {
-        position -= 195;
+      if (window.innerWidth >= 537) {
+        if (header.hasClass('colored')) {
+          position -= 150;
+        } else {
+          position -= 195;
+        }
+      } else if (window.innerWidth <= 537) {
+        if (header.hasClass('colored')) {
+          position -= 45;
+        } else {
+          position -= 45;
+        }
       }
 
       var coord = {
