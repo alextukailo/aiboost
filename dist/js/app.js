@@ -256,7 +256,67 @@ var ajaxSendData = function ajaxSendData() {
     focusInvalid: true,
     errorClass: "input_error"
   });
-  var formph = $('.contacts__form');
+  var formph = $('#contacts_form_mobile');
+  formph.validate({
+    submitHandler: function submitHandler(formph) {
+      var fd = new FormData(formph);
+      $.ajax({
+        async: true,
+        url: "./src/mail/send_contacts.php",
+        type: "POST",
+        data: fd,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function success(data) {
+          if (data == 'done') {
+            // console.log(data);
+            formph.reset();
+          } else {
+            // console.log(data);
+            formph.reset();
+            $('#try_response').text('Sent successfully');
+            setTimeout(function () {
+              $('#try_response').text('Send Message');
+            }, 5500);
+          }
+        },
+        error: function error(data) {
+          console.log('error');
+          console.log(data);
+        }
+      });
+      return false;
+    },
+    rules: {
+      contacts_name: {
+        required: true
+      },
+      contacts_email: {
+        required: true,
+        email: true
+      },
+      contacts_text: {
+        required: true
+      }
+    },
+    messages: {
+      contacts_name: {
+        required: "Required field!"
+      },
+      contacts_email: {
+        required: "Required field!",
+        email: "Email must be in name@domain.com format"
+      },
+      contacts_text: {
+        required: "Required field!"
+      }
+    },
+    errorElement: "div",
+    focusInvalid: true,
+    errorClass: "input_error"
+  });
+  var formph = $('#contacts_form');
   formph.validate({
     submitHandler: function submitHandler(formph) {
       var fd = new FormData(formph);
