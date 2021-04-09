@@ -453,7 +453,7 @@ var videoContainer = function videoContainer() {
     start.hidden = true;
     thumb.hidden = true;
     video.hidden = false;
-    video.src += "?autoplay=1";
+    video.src += "&autoplay=1";
   };
 
   close.onclick = function () {
@@ -461,7 +461,7 @@ var videoContainer = function videoContainer() {
     start.hidden = false;
     thumb.hidden = false;
     video.hidden = true;
-    video.src += "?autoplay=0";
+    video.src += "&autoplay=0";
   };
 
   watch.onclick = function () {
@@ -469,7 +469,7 @@ var videoContainer = function videoContainer() {
     start.hidden = true;
     thumb.hidden = true;
     video.hidden = false;
-    video.src += "?autoplay=1";
+    video.src += "&autoplay=1";
   };
 };
 

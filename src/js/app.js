@@ -322,7 +322,7 @@ validate()
                 start.hidden = true
                 thumb.hidden = true
                 video.hidden = false
-                video.src += "?autoplay=1"
+                video.src += "&autoplay=1"
             }
 
             close.onclick = () => {
@@ -330,7 +330,7 @@ validate()
                 start.hidden = false
                 thumb.hidden = false
                 video.hidden = true
-                video.src += "?autoplay=0"
+                video.src += "&autoplay=0"
             }
 
             watch.onclick = () => {
@@ -338,7 +338,7 @@ validate()
                 start.hidden = true
                 thumb.hidden = true
                 video.hidden = false
-                video.src += "?autoplay=1"
+                video.src += "&autoplay=1"
             }
     }
 	videoContainer()
