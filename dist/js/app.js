@@ -275,9 +275,9 @@ var ajaxSendData = function ajaxSendData() {
           } else {
             // console.log(data);
             formph.reset();
-            $('#try_response').text('Sent successfully');
+            $('#contacts_response_mobile').text('Sent successfully');
             setTimeout(function () {
-              $('#try_response').text('Send Message');
+              $('#contacts_response_mobile').text('Send Message');
             }, 5500);
           }
         },
@@ -335,9 +335,9 @@ var ajaxSendData = function ajaxSendData() {
           } else {
             // console.log(data);
             formph.reset();
-            $('#try_response').text('Sent successfully');
+            $('#contacts_response').text('Sent successfully');
             setTimeout(function () {
-              $('#try_response').text('Send Message');
+              $('#contacts_response').text('Send Message');
             }, 5500);
           }
         },
